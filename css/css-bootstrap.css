@@ -1,0 +1,148 @@
+ body {
+     position: relative;
+ }
+
+
+ .btn-primary {
+     color: #fff;
+     background-color: #C83267;
+     border-color: #C83267;
+     font-size: 20px;
+     line-height: 1;
+     padding: 14px 25px;
+     border-radius: 4px;
+ }
+
+ .container-btn .btn:hover {
+     background: rgb(204, 151, 208);
+ }
+
+ .dropdown-item:hover {
+     background: greenyellow;
+ }
+
+ .btn-secondary {
+     color: #fff;
+     background-color: #ce97f0;
+     font-size: 20px;
+     line-height: 1;
+     padding: 19px 61px;
+     border-radius: 4px;
+ }
+
+ .alert {
+     color: #fff;
+     font-size: 20px;
+     line-height: 1;
+     padding: 19px 61px;
+     border-radius: 4px;
+ }
+
+ .alert-secondary {
+     background-color: #dbb3f3;
+ }
+
+ .alert-primary {
+     background-color: #e68989;
+ }
+
+ .alert-success {
+     background-color: #6d66ed;
+ }
+
+ .nav-tabs {
+     background-color: #eae28e;
+ }
+
+ .spinner-grow {
+     background-image: url("../img/wolf.jpg");
+     background-repeat: no-repeat;
+     background-size: contain;
+ }
+
+ .gradient__block {
+
+     margin: 15px auto;
+     max-width: 500px;
+     height: 300px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background-image: linear-gradient(230deg,
+             hsl(240deg 100% 20%) 0%,
+             hsl(261deg 100% 24%) 4%,
+             hsl(281deg 100% 27%) 9%,
+             hsl(302deg 100% 31%) 15%,
+             hsl(322deg 100% 34%) 24%,
+             hsl(343deg 100% 38%) 34%,
+             hsl(3deg 100% 41%) 45%,
+             hsl(24deg 100% 45%) 55%,
+             hsl(45deg 100% 48%) 63%,
+             hsl(52deg 98% 51%) 70%,
+             hsl(45deg 95% 54%) 76%,
+             hsl(39deg 92% 57%) 81%,
+             hsl(32deg 88% 60%) 85%,
+             hsl(26deg 84% 63%) 89%,
+             hsl(19deg 82% 66%) 92%,
+             hsl(13deg 78% 69%) 95%,
+             hsl(7deg 74% 71%) 98%,
+             hsl(0deg 71% 74%) 100%);
+ }
+
+ .gradient__title {
+     text-align: center;
+
+ }
+
+ .nav-link:hover {
+     background: #6d66ed;
+ }
+
+ .nav-link:active {
+     background: greenyellow;
+ }
+
+ .scroll_content {
+     height: 200px;
+     overflow-y: scroll;
+     padding: 5px;
+     border: 1px solid #ccc;
+ }
+
+
+ .form__container {
+     margin: auto;
+     display: flex;
+     justify-content: center;
+     background: url(https://i.gifer.com/19Rk.gif);
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: bottom;
+     background-attachment: fixed;
+     height: 100%;
+     padding: 100px 0;
+ }
+
+ .form__main {
+     display: flex;
+     flex-direction: column;
+
+ }
+
+ .form__main input,
+  .form__main .nice-select{
+     padding: 10px 20px;
+     margin: 10px;
+     border-radius: 20px;
+ }
+ .form__main .nice-select{
+     padding-top: 0;
+     border: 1px  solid #121212;
+ }
+ .form__main .nice-select.open .list{
+     width: 100%;
+ }
+ .form__btn:focus {
+     background: #5f1c88;
+ }
+ 

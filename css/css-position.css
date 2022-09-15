@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap');
+
+@font-face {
+    font-family: 'Orelega One';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("../fonts/OrelegaOne-Regular.woff") format('woff2');
+}
+
+
+@font-face {
+    font-family: 'Be Vietnam Pro';
+    font-style: normal;
+    font-weight: 100;
+    font-display: swap;
+    src: url("../fonts/BeVietnamPro-ThinItalic.ttf") format("opentype");
+}
+
+@font-face {
+    font-family: 'Be Vietnam Pro';
+    font-style: normal;
+    font-weight: 200;
+    font-display: swap;
+    src: url("../fonts/BeVietnamPro-ExtraLightItalic.ttf") format("opentype");
+}
+
+@font-face {
+    font-family: 'Be Vietnam Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("../fonts/BeVietnamPro-Italic.ttf") format("opentype");
+}
+
+@font-face {
+    font-family: 'Be Vietnam Pro';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url("../fonts/BeVietnamPro-MediumItalic.ttf") format("opentype");
+}
+
+@font-face {
+    font-family: 'Be Vietnam Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url("../fonts/BeVietnamPro-SemiBoldItalic.ttf") format("opentype");
+}
+
+
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Exo', sans-serif;
+}
+
+
+
+
+
+
+.container{
+    max-width: calc(100% - 25%);
+    margin: auto;
+}
+/* Actual */
+
+.product-list {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 70px;
+}
+
+.product-item {
+    width: 325px;
+    border-radius: 5px;
+    background: #FFFFFF;
+    box-shadow: 0px 15px 34px rgba(33, 37, 106, 0.1);
+    margin-bottom: 30px;
+
+}
+
+.hot,
+.sale,
+.sold{
+    position: relative;
+  
+
+}
+.hot::before{
+    content:"TOP";
+    position: absolute;
+    width: 18%;
+    height: 15%;
+    left:-20px;
+    top: 0;
+
+    background-size: contain;
+    background-repeat: no-repeat;
+   
+    background-image: url('../img/fire-1.png');
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.sale::after{
+    content:"";
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    left: 13%;
+    background-image: url(../img/sale.png);
+    bottom: -139px;
+}
+
+
+
+.sold{
+    cursor: not-allowed;
+    background: rgb(221, 216, 216 , 0.6);
+}
+.sold::before{
+    content: 'SOLD';
+    background: red;
+    color: white;
+    width: calc(100% - 63%);
+    font-size: 36px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: calc(100% -  30%);
+}
+
+.product-item:hover {
+    background: #B7D8E5;
+}
+
+.product-item img {
+  object-fit: contain;
+  width: 325px;
+  height: 293px;
+    
+}
+
+.item_description {
+    width: 85%;
+    margin: auto;
+    margin-top: 25px;
+
+
+}
+
+.item_description h2 {
+    font-family: 'Orelega One', cursive;
+    font-size: 20px;
+    line-height: 32px;
+    color: #093624;
+    
+}
+
+.item_description p {
+    margin-top: 10px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 26px;
+    color: #4F4F4F;
+    opacity: 0.6;
+}
+.item_description p:last-child{
+    margin-bottom: 20px;
+}
+.phone{
+    cursor: pointer;
+    position: fixed;
+    border: 2px solid green;
+    border-radius: 28%;
+    top: calc(100% - 16%);
+    left: calc(100% - 7%);
+}
+.phone img{
+   
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    
+}
+.sticky{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.sticky__content{
+    max-width: 40%;
+    background-color: aqua;
+    padding: 10px 15px;
+    height: 600px;
+    overflow-y: scroll;
+}
+
+.sticky__content h1{
+    position: sticky;
+    top: 0;
+    text-align: center;
+    background-color: aqua;
+    font-family: 'Leckerli One';
+    
+}
+.sticky__list {
+    max-width: 50%;
+    max-height: 200px;
+    overflow: auto;
+}
+.sticky__list ul{
+   width:  600px;
+}
+
+.sticky__item{
+    position: sticky;
+    top: 10px;
+    background-color: #093624;
+    color: white;
+}
+
+
+.fonts { 
+    margin-top: 40px;
+    background-color: royalblue;
+    max-width: 800px;
+    height: 300px;
+}
+.fonts__content{
+    padding: 10px 20px;
+}
+.text-light,
+.text-regular,
+.text-medium,
+.text-semi-bold,
+.text-bold {
+    font-family: 'Be Vietnam Pro';
+}
+
+
+.text-light {
+    font-weight: 100;
+}
+
+.text-regular {
+    font-weight: 200;
+}
+
+.text-medium {
+    font-weight: 400;
+}
+
+.text-semi-bold {
+    font-weight: 500;
+}
+
+.text-bold {
+    font-weight: 700;
+}

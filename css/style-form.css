@@ -1,0 +1,85 @@
+*{
+    font-size: 20px;
+    text-transform:uppercase
+}
+.btn-primary {
+    color: #fff;
+    background-color: #C83267;
+    border-color: #C83267;
+    font-size: 20px;
+    line-height: 1;
+    padding: 14px 25px;
+    border-radius: 4px;
+}
+ .form__container {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(https://i.gifer.com/19Rk.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100%;
+    padding: 100px 0;
+    flex-direction: column;
+    
+}
+
+.form__main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.form__main input,
+ .form__main .nice-select{
+    padding: 20px 50px;
+    margin: 10px;
+    border-radius: 20px;
+}
+.form__main .nice-select{
+    padding-top: 0;
+    border: 1px  solid #121212;
+}
+.form__main .nice-select.open .list{
+    width: 100%;
+}
+.form__btn{
+    width: 100%;
+}
+.form__btn:focus {
+    background: #5f1c88;
+}
+.form__social{
+    position: relative;
+    width: 400px;
+}
+.social-item{
+    width: 63px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    cursor: pointer;
+    
+}
+.social-item:hover{
+    box-shadow: 3px 3px red;
+}
+.facebook{
+    background: url('../img/sprite.png') -45px -25px;
+}
+.twiter{
+    background: url('../img/sprite.png') -148px -25px;
+    left: 150px;
+}
+.google{
+    background: url('../img/sprite.png') -250px -25px;
+    left: 300px;
+}
