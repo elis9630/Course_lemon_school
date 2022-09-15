@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/flexbox.css">
+    <link rel="stylesheet" href="./css/animation.css">
+</head>
+
+<body>
+    <!-- <h3>Собака - лучший друг человека</h3>
+    <img class="wow heartBeat"
+        src="./img/dog_230497594.jpg" alt="Собака - лучший друг человека">
+        <h3>Собака - лучший друг человека</h3>
+    <img class="wow zoomInUp" data-wow-offset="200" data-wow-delay="0.5s" data-wow-duration="2s"
+        src="./img/domestic-dog_thumb_4x3.webp" alt="Собака - лучший друг человека">
+        <h3>Собака - лучший друг человека</h3>
+    <img class="wow zoomInUp" data-wow-offset="200" data-wow-delay="0.5s" data-wow-duration="2s"
+        src="./img/download.jpg" alt="Собака - лучший друг человека">
+        <h3>Собака - лучший друг человека</h3>
+    <img class="wow zoomInUp" data-wow-offset="200" data-wow-delay="0.5s" data-wow-duration="2s"
+        src="./img/images.jpg" alt="Собака - лучший друг человека"> -->
+
+    <div class="flex-box-template">
+
+
+        <div class="template" data-aos="flip-left">
+            <div class="template__title wow animate__jello " data-wow-duration="2s" >justify-content: flex-start</div>
+            <div class="flex-container justify-content-flex-start">
+                <div class="flex-element wow zoomInUp  " >1</div>
+                <div class="flex-element">2</div>
+                <div class="flex-element">3</div>
+                <div class="flex-element">4</div>
+            </div>
+        </div>
+        <div class="template " data-aos="fade-down-left">
+            <div class="template__title">justify-content: flex-end</div>
+            <div class="flex-container justify-content-flex-end">
+                <div class="flex-element wow animate__jello" data-wow-offset="200" 
+                data-wow-delay="0.5s" 
+                data-wow-duration="2s" >1</div>
+                <div class="flex-element  wow animate__shakeY" data-wow-offset="200" 
+                data-wow-delay="0.5s" 
+                data-wow-duration="2s" >2</div>
+                <div class="flex-element">3</div>
+                <div class="flex-element animate-item">4</div>
+            </div>
+        </div>
+       
+        <div class="animation-sprite">
+            <div class="horizontal"></div>
+            
+
+            <div class="vertical"></div>
+        </div>
+
+
+    </div>
+ 
+
+    <script src="./js/wow.js"></script>
+    <script>
+        new WOW().init();
+       </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      
+
+        AOS.init();
+      </script>
+</body>
+
+</html>

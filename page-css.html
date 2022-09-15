@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page-css</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/flexbox.css">
+</head>
+<body>
+    <main>
+        <article>
+            <div class="table-container">
+                <h2>Table</h2>
+                <table class="table">
+
+                    <tbody>
+                        <tr>
+                            <td class="first-cell">1-й ряд 1 ячейка</td>
+                            <td rowspan="2">1-й ряд 2 ячейка</td>
+                            <td class="third-cell">1-й ряд 3 ячейка</td>
+                            <td>1-й ряд 4 ячейка</td>
+                        </tr>
+                        <tr>
+                            <td class="first-cell">2-й ряд 1 ячейка</td>
+                            <td colspan="2">2-й ряд 2 ячейка</td>
+
+                        </tr>
+                        <tr>
+                            <td class="first-cell">3-й ряд 1 ячейка</td>
+                            <td colspan="3">3-й ряд 2 ячейка</td>
+
+                        </tr>
+                        <tr>
+                            <td class="first-cell">4-й ряд 1 ячейка</td>
+                            <td>4-й ряд 2 ячейка</td>
+                            <td class="third-cell">4-й ряд 3 ячейка</td>
+                            <td>4-й ряд 4 ячейка</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </article>
+    
+   
+    <div class="flex-box-template">
+        <h2>Flexbox</h2>
+        <div class="template">
+            <div class="template__title">display: flex;</div>
+            <div class="flex-container">
+                <div class="flex-element">1</div>
+                <div class="flex-element">2</div>
+                <div class="flex-element">3</div>
+                <div class="flex-element">4</div>
+                <div class="flex-element">5</div>
+                <div class="flex-element">6</div>
+                
+            </div>
+        </div>
+        <div class="template">
+            <div class="template__title">row-reverse</div>
+            <div class="flex-container row-reverse">
+                <div class="flex-element">1</div>
+                <div class="flex-element">2</div>
+                <div class="flex-element">3</div>
+                <div class="flex-element">4</div>
+                <div class="flex-element">5</div>
+                <div class="flex-element">6</div>
+
+            </div>
+        </div>
+        <div class="template">
+            <div class="template__title">wrap: wrap</div>
+            <div class="flex-container flex-wrap-wrap">
+                <div class="flex-element">1</div>
+                <div class="flex-element">2</div>
+                <div class="flex-element">3</div>
+                <div class="flex-element">4</div>
+                <div class="flex-element">5</div>
+                <div class="flex-element">6</div>
+            </div>
+        </div>
+        <div class="template">
+            <div class="template__title">flex-direction: column</div>
+            <div class="flex-container flex-direction-column">
+                <div class="flex-element">1</div>
+                <div class="flex-element">2</div>
+                <div class="flex-element">3</div>
+                <div class="flex-element">4</div>
+            </div>
+        </div>
+        <div class="template">
+            <div class="template__title">flex-direction: column-revers</div>
+            <div class="flex-container flex-direction-column-revers">
+                <div class="flex-element">1</div>
+                <div class="flex-element">2</div>
+                <div class="flex-element">3</div>
+                <div class="flex-element">4</div>
+            </div>
+        </div>
+
+       
+        <div class="template">
+            <div class="template__title">justify-content: flex-start</div>
+            <div class="flex-container justify-content-flex-start">
+                <div class="flex-element">1</div>
+                <div class="flex-element">2</div>
+                <div class="flex-element">3</div>
+                <div class="flex-element">4</div>
+            </div>
+        </div>
+        <div class="template">
+            <div class="template__title">justify-content: flex-end</div>
+            <div class="flex-container justify-content-flex-end">
+                <div class="flex-element">1</div>
+                <div class="flex-element">2</div>
+                <div class="flex-element">3</div>
+                <div class="flex-element">4</div>
+            </div>
+        </div>
+        <div class="template">
+            <div class="template__title">justify-content: center</div>
+            <div class="flex-container justify-content-center">
+                <div class="flex-element">1</div>
+                <div class="flex-element">2</div>
+                <div class="flex-element">3</div>
+                <div class="flex-element">4</div>
+            </div>
+        </div>
+        <div class="template">
+            <div class="template__title">justify-content: space-between</div>
+            <div class="flex-container justify-content-space-between">
+                <div class="flex-element">1</div>
+                <div class="flex-element">2</div>
+                <div class="flex-element">3</div>
+                <div class="flex-element">4</div>
+            </div>
+        </div>
+        <div class="template">
+            <div class="template__title">justify-content: space-around </div>
+            <div class="flex-container justify-content-space-around ">
+                <div class="flex-element ">1</div>
+                <div class="flex-element">2</div>
+                <div class="flex-element">3</div>
+                <div class="flex-element">4</div>
+            </div>
+        </div>
+        <div class="template">
+            <div class="template__title">justify-content: space-evenly</div>
+            <div class="flex-container justify-content-space-evenly">
+                <div class="flex-element">1</div>
+                <div class="flex-element">2</div>
+                <div class="flex-element">3</div>
+                <div class="flex-element">4</div>
+            </div>
+        </div>
+        
+        <div class="template">
+            <div class="template__title">align-items stretch </div>
+            <div class="flex-container align-items-stretch">
+                <div class="flex-element align-item">1</div>
+                <div class="flex-element">2</div>   
+                <div class="flex-element align-item">3</div>
+                <div class="flex-element">4</div>
+            </div>
+        </div>
+        <div class="template">
+            <div class="template__title">align-items flex-start</div>
+            <div class="flex-container align-items-flex-start">
+                <div class="flex-element align-item">1</div>
+                <div class="flex-element">2</div>
+                <div class="flex-element align-item">3</div>
+                <div class="flex-element">4</div>
+            </div>
+        </div>
+        <div class="template">
+            <div class="template__title">align-items flex-end</div>
+            <div class="flex-container align-items-flex-end">
+                <div class="flex-element align-item">1</div>
+                <div class="flex-element">2</div>
+                <div class="flex-element align-item">3</div>
+                <div class="flex-element">4</div>
+            </div>
+        </div>
+        <div class="template">
+            <div class="template__title">align-items center</div>
+            <div class="flex-container align-items-center">
+                <div class="flex-element align-item">1</div>
+                <div class="flex-element">2</div>
+                <div class="flex-element align-item">3</div>
+                <div class="flex-element">4</div>
+            </div>
+        </div>
+        <div class="template">
+            <div class="template__title">align-items baseline</div>
+            <div class="flex-container align-items-baseline">
+                <div class="flex-element align-item">1</div>
+                <div class="flex-element">2</div>
+                <div class="flex-element align-item">3</div>
+                <div class="flex-element">4</div>
+            </div>
+        </div>
+
+
+        <div class="template">
+            <div class="template__title">align-content center </div>
+            <div class="flex-container modifier-container align-content-center">
+                <div class="flex-element ">1</div>
+                <div class="flex-element">2</div>   
+                <div class="flex-element ">3</div>
+                <div class="flex-element">4</div>
+                <div class="flex-element">5</div>
+                <div class="flex-element">6</div>
+                <div class="flex-element">7</div>
+            </div>
+        </div>
+        <div class="template">
+            <div class="template__title">align-content flex-start  </div>
+            <div class="flex-container modifier-container align-content-flex-start ">
+                <div class="flex-element ">1</div>
+                <div class="flex-element">2</div>   
+                <div class="flex-element ">3</div>
+                <div class="flex-element">4</div>
+                <div class="flex-element">5</div>
+                <div class="flex-element">6</div>
+                <div class="flex-element">7</div>
+            </div>
+        </div>
+        <div class="template">
+            <div class="template__title">align-content flex-end </div>
+            <div class="flex-container modifier-container align-content-flex-end">
+                <div class="flex-element ">1</div>
+                <div class="flex-element">2</div>   
+                <div class="flex-element ">3</div>
+                <div class="flex-element">4</div>
+                <div class="flex-element">5</div>
+                <div class="flex-element">6</div>
+                <div class="flex-element">7</div>
+            </div>
+        </div>
+        <div class="template">
+            <div class="template__title">align-content space-between </div>
+            <div class="flex-container modifier-container align-content-space-between">
+                <div class="flex-element ">1</div>
+                <div class="flex-element">2</div>   
+                <div class="flex-element ">3</div>
+                <div class="flex-element">4</div>
+                <div class="flex-element">5</div>
+                <div class="flex-element">6</div>
+                <div class="flex-element">7</div>
+            </div>
+        </div>
+
+        <div class="template">
+            <div class="template__title">align-content space-around </div>
+            <div class="flex-container modifier-container align-content-space-around">
+                <div class="flex-element ">1</div>
+                <div class="flex-element">2</div>   
+                <div class="flex-element ">3</div>
+                <div class="flex-element">4</div>
+                <div class="flex-element">5</div>
+                <div class="flex-element">6</div>
+                <div class="flex-element">7</div>
+            </div>
+        </div>
+        <div class="template">
+            <div class="template__title">align-content stretch </div>
+            <div class="flex-container modifier-container align-content-stretch">
+                <div class="flex-element ">1</div>
+                <div class="flex-element">2</div>   
+                <div class="flex-element">3</div>
+                <div class="flex-element">4</div>
+                <div class="flex-element">5</div>
+                <div class="flex-element">6</div>
+                <div class="flex-element">7</div>
+            </div>
+        </div>
+
+
+
+
+        <div class="template">
+            <div class="template__title">Order</div>
+            <div class="flex-container justify-content-align-item">
+                <div class="flex-element ">1</div>
+                <div class="flex-element">2</div>
+                <div class="flex-element sales">3</div>
+                <div class="flex-element">4</div>
+            </div>
+        </div>
+        <div class="template">
+            <div class="template__title pseudo-element">First letter, first line, selection(выдели меня ::selection)</div>
+            <div class="flex-container  ">
+                <p class="pseudo-element-first">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus iste neque exercitationem fuga aperiam, temporibus optio beatae impedit maiores quidem quos magnam perspiciatis eveniet laboriosam laudantium error, molestiae magni veniam?
+                </p>
+            </div>
+        </div>
+
+
+    </div>
+</main>
+</body>
+</html>

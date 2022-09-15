@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./jquery-nice-select-1.1.0/css/nice-select.css">
+    <link rel="stylesheet" href="./intl-tel-input-master/build/css/intlTelInput.css">
+    <link rel="stylesheet" href="./css/style-form.css">
+</head>
+<body>
+    
+  <div class="form__container">
+    <form action="#" method="" class="form__main">
+      <input name="firstname" required type="text" id="name" placeholder="Ваше имя" data-bs-toggle="tooltip"
+        data-bs-placement="left" title="Ваше имя">
+      <input name="email" required type="email" placeholder="Ваша почта">
+      <input name="phone_number" required type="tel" id="phone">
+
+
+      <select name="car" id="car">
+        <option value="1" data-display="volkswagen">volkswagen</option>
+        <option value="2">nissan</option>
+        <option value="3">toyota</option>
+        <option value="4">BMW</option>
+
+      </select>
+
+
+
+      <button class="form__btn btn-primary " type="submit">Отправить </button>
+
+      
+    </form>
+    <div class="form__social">
+        <div class="facebook social-item"></div>
+        <div class="twiter  social-item"></div>
+        <div class="google  social-item"></div>
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="./jquery-nice-select-1.1.0/js/jquery.nice-select.js"></script>
+  <script src="./intl-tel-input-master/build/js/intlTelInput-jquery.min.js"></script>
+  <script src="./intl-tel-input-master/build/js/intlTelInput.js"></script>
+  <script>
+   
+
+    $(document).ready(function () {
+      $('select').niceSelect()
+    });
+
+
+    $("#phone").intlTelInput({
+      defaultCountry: "auto",
+      geoIpLookup: function (callback) {
+        $.get('http://ipinfo.io', function () {}, "jsonp").always(function (resp) {
+          var countryCode = (resp && resp.country) ? resp.country : "";
+          callback(countryCode);
+        });
+      },
+      utilsScript: "./intl-tel-input-master/build/js/utils.js" //для форматирования/плейсхолдера и т.д.
+    });
+  </script>
+</body>
+</html>
